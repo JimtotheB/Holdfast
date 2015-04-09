@@ -1,6 +1,6 @@
 {
-  "name": "holdfast-client",
-  "version": "0.0.1",
+  "name": "holdfast",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,11 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "holdfast-client": "cli/holdfast-client.js"
+    "holdfast-client": "cli/holdfast.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PaperElectron/Holdfast-client.git"
+    "url": "https://github.com/PaperElectron/Holdfast.git"
   },
   "keywords": [
     "Docker",
@@ -23,9 +23,9 @@
   "author": "Jim <monstertke@paperelectron.com> (http://paperelectron.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PaperElectron/Holdfast-client/issues"
+    "url": "https://github.com/PaperElectron/Holdfast/issues"
   },
-  "homepage": "https://github.com/PaperElectron/Holdfast-client",
+  "homepage": "https://github.com/PaperElectron/Holdfast",
   "dependencies": {
     "bluebird": "^2.9.15",
     "commander": "^2.7.1",
