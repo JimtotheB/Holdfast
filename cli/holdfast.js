@@ -8,16 +8,17 @@
 
 var path = require('path');
 var scriptPath = path.join(__dirname, '../lib', 'Holdfast');
-
+var packageVersion = require(path.join(__dirname, '../', 'package.json')).version;
 var app = require('commander');
 
 app
-  .version('0.0.1')
+  .version(packageVersion)
   .option("-c --config <file>", "Path to .JSON file holding the configuration and docker info for this host")
   .parse(process.argv)
 
 if(app.config){
-  require(scriptPath)(app.config)
+  var payload = require(app.config)
+  require(scriptPath)(payload)
 }
 else {
 
